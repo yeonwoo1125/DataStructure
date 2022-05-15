@@ -23,8 +23,10 @@ public class StackImplements {
         for(int i=1; i<=95; i++)
             stack.push(i);
         stack.printStack();
+        System.out.println(stack.size());
     }
 }
+
 class ArrayStack{
     private int top;
     private int capacity;
@@ -53,7 +55,7 @@ class ArrayStack{
     }
 
     public int size(){
-        return this.capacity+1;
+        return this.top+1;
     }
     public void push(Object element){
         checkType(element);
